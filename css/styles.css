@@ -1,0 +1,151 @@
+/*--------------------GENERAL--------------------*/
+/* FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+/* HTMLElement */
+body{
+    margin: 0;
+    font-size: 15px;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    background-color: hsl(233, 47%, 7%);
+    padding-bottom: 20px;
+}
+
+/* GENERIC CLASSES */
+.accent{
+    color: hsl(277, 64%, 61%);
+}
+
+.container{
+    padding: 20px 40px 15px;
+    text-align: center;
+}
+
+.br-desk{
+    display: none;
+}
+
+/* CARD */
+.main-wrapper{
+    background-color: hsl(244, 38%, 16%);
+    margin: 50px auto;
+    padding: 1px;
+    border-radius: 10px;
+    width: 375px;
+}
+
+/* CARD IMAGE */
+.main-img{
+    background: url("/images/image-header-mobile.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 275px;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+}
+
+.main-img::after{
+    content: "";
+    background: hsla(277, 64%, 61%, .5);
+    border-radius: 10px 10px 0 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/* CARD TEXT */
+.main-content{
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.7rem;
+}
+
+/* CARD STATS */
+.stats{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto auto 15px;
+    padding-top: 10px;
+}
+
+.stats-title{
+    font-family: 'Lexend Deca', sans-serif;
+    margin-bottom: 0;
+    font-size: 1.7rem;
+}
+
+.stats-content{
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+    margin: 8px auto;
+}
+
+.stats div{
+    text-align: center;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 1440px){
+
+    /* GENERIC CLASSES */
+    .container{
+        width: 46%;
+        padding: 40px 70px 40px 100px;
+    }
+
+    .br-mob {
+        display: none;
+    }
+
+    .br-desk{
+        display: inline;
+    }
+
+    /* CARD */
+    .main-wrapper{
+        /* margin: 50px auto; */
+        padding: 1px;
+        width: 1440px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        height: 500px;
+    }
+
+    /* CARD IMAGE */
+    .main-img{
+        width: 54%;
+        height: auto;
+        border-radius: 0 10px 10px 0;
+    }
+
+    .main-img::after{
+        border-radius: 0 10px 10px 0;
+    }
+
+    /* CARD TITLE */
+    .main-title{
+        text-align: left;
+        font-size: 3rem;
+    }
+
+    /* CARD TEXT */
+    .main-content{
+        text-align-last: left;
+        font-size: 1.2rem;
+    }
+
+    /* CARD STATISTICS */
+    .stats{
+        flex-direction: row;
+        padding-right: 150px;
+    }
+
+    .stats div{
+        text-align: left;
+    }
+}
