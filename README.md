@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/AlexGDevPro/FEM---Ch.-1---Stats-preview-card-component](https://github.com/AlexGDevPro/FEM---Ch.-1---Stats-preview-card-component)
-- Live Site URL: [https://alexgdevpro.github.io/FEM---Ch.-1---Stats-preview-card-component/](https://alexgdevpro.github.io/FEM---Ch.-1---Stats-preview-card-component/)
+- Live Site URL: [https://alexgdevpro.github.io/FEM_Ch.-1_Stats-preview-card-component/](https://alexgdevpro.github.io/FEM_Ch.-1_Stats-preview-card-component/)
 
 ## My process
 
